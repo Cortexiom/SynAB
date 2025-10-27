@@ -1,33 +1,28 @@
 {
-  "name": "synab",
+  "name": "synexiom-alignment-benchmark",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "An open-source framework for evaluating reflective capacity and alignment in AI systems",
+  "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Cortexiom/SynAB.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Cortexiom/SynAB/issues"
-  },
-  "homepage": "https://github.com/Cortexiom/SynAB#readme",
-  "description": "",
+  "keywords": ["ai", "alignment", "benchmark", "safety", "evaluation"],
+  "author": "Meghrajsinh Solanki",
+  "license": "MIT",
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.67.0",
-    "@google/generative-ai": "^0.24.1",
-    "@supabase/supabase-js": "^2.76.1",
-    "openai": "^6.7.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "@anthropic-ai/sdk": "^0.20.0",
+    "@supabase/supabase-js": "^2.39.0",
+    "next": "^14.0.0",
+    "openai": "^4.24.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^24.9.1",
-    "@types/react": "^19.2.2",
-    "typescript": "^5.9.3"
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "typescript": "^5.0.0"
   }
 }
