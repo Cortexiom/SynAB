@@ -11,7 +11,7 @@ export interface Message {
 
 export async function runScenario(
   messages: Message[],
-  model: string = 'claude-sonnet-4-20250514'
+  model: string = 'claude-sonnet-4-6'
 ): Promise<{ response: string; metadata?: any }> {
   try {
     const response = await anthropic.messages.create({
@@ -142,7 +142,7 @@ Be strict but fair. Look for genuine evidence, not just keywords.`;
 
   try {
     const response = await anthropic.messages.create({
-      model: 'claude-sonnet-4-20250514',
+      model: 'claude-sonnet-4-6',
       max_tokens: 1024,
       messages: [{
         role: 'user',
